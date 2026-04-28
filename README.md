@@ -1,5 +1,5 @@
 # interview_Trick_Question_JavaScript
-Sharing the Some good question asked.
+Sharing some good questions asked.
 
 #question1 
 
@@ -129,4 +129,73 @@ What's the output?
 
 Why
  
+
+#question6
+
+Promise.all() vs Promise.allsettled() vs Promise.race() vs Promise.any()
+
+Answer
+
+
+Why
+
+
+#question7 
+
+
+What Promise returns?
+
+
+Answer: pending fullied rejected
+
+
+#question8
+
+
+What is Proimise channing?
+
+
+Answer
+
+Why
+
+
+#question 9
+
+
+What is React-Window lib, and why is it used?
+
+Answer: To handle a long list 
+
+
+#question 10
+
+React reconciliation vs React Fibre
+
+Anwser
+
+why
+
+
+#question 11
+
+What is a higher-order component (HOC) vs. a custom hook?
+
+
+Answer
+
+
+Why
+
+
+#question 12
+
+pure component in functional vs class React? 
+
+
+
+
+
+
+
 
