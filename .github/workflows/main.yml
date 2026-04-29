@@ -1,0 +1,29 @@
+name: CI/CD Pipeline
+on:
+  push:
+    branches: [ "main" ]  # Trigger on push to main branch
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  # Continuous Integration (CI) Job
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Set up Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Run Tests
+        run: npm test
+
+  # Continuous Deployment (CD) Job
+  deploy:
+    needs: test  # Only run if 'test' job passes
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy to Production
+        run: echo "Deploying your application..."
