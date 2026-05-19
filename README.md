@@ -15,6 +15,13 @@ a[b] = 123;
 a[c] = 456;
 
 console.log(a[b]);
+
+
+---------------------
+a[b] = 123;  // a["[object Object]"] = 123
+a[c] = 456;  // a["[object Object]"] = 456  ← overwrites 123
+
+console.log(a[b]); // a["[object Object]"] → 456
 ```
 Answer : 456
 
